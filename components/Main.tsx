@@ -7,9 +7,9 @@ export function Main() {
       <div className="mx-auto max-w-lg bg-[#111111] pt-14">
         <div>
           <div className="text-center">
-            <h3>
+            <h3 className="flex items-center justify-center gap-x-2 text-2xl text-white">
               edndacomputer
-              <RiVerifiedBadgeFill />
+              <RiVerifiedBadgeFill className="text-2xl text-[#26A7DE]" />
             </h3>
           </div>
         </div>
