@@ -1,0 +1,5 @@
+{
+  "name": "Sanity Project",
+  "appPort": 4321,
+  "appPortAutoForward": true
+}
