@@ -1,8 +1,8 @@
-import React from "react"
-import Link from "next/link"
-import { FaGlobeAmericas, FaPhoneAlt } from "react-icons/fa"
-import { PiGlobeSimpleThin, PiPhoneLight } from "react-icons/pi"
-import { RiVerifiedBadgeFill } from "react-icons/ri"
+import React from 'react';
+import Link from 'next/link';
+import { FaGlobeAmericas, FaPhoneAlt } from 'react-icons/fa';
+import { PiGlobeSimpleThin, PiPhoneLight } from 'react-icons/pi';
+import { RiVerifiedBadgeFill } from 'react-icons/ri';
 
 export function Main() {
   return (
@@ -32,7 +32,7 @@ export function Main() {
           </p>
           <div className="flex justify-center gap-x-7">
             <Link
-              href={"https://github.com/edthecodepusher/"}
+              href={'https://github.com/edthecodepusher/'}
               className="flex items-center gap-x-2 rounded-xl p-1 px-2 transition-all duration-100 ease-in hover:bg-neutral-900"
             >
               <FaGlobeAmericas className=" text-xl text-neutral-500" />
@@ -47,6 +47,6 @@ export function Main() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-export default Main
+export default Main;
