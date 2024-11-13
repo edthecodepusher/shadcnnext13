@@ -18,9 +18,9 @@ export function Main() {
 
           <div className="font-Interegular mt-3 flex items-center justify-center gap-x-2 text-neutral-500">
             <p>Est. 1985</p>
-            <span className="size-[3px] rounded-full  bg-neutral-600" />
+            <span className="size-[3px] rounded-full bg-neutral-600" />
             <p>Ventura, California</p>
-            <span className="size-[3px] rounded-full  bg-neutral-600" />
+            <span className="size-[3px] rounded-full bg-neutral-600" />
             <p>He/Him</p>
           </div>
         </div>
@@ -35,12 +35,12 @@ export function Main() {
               href={'https://github.com/edthecodepusher/'}
               className="flex items-center gap-x-2 rounded-xl p-1 px-2 transition-all duration-100 ease-in hover:bg-neutral-900"
             >
-              <FaGlobeAmericas className=" text-xl text-neutral-500" />
+              <FaGlobeAmericas className="text-xl text-neutral-500" />
               <p className="font-Intermedium text-white">edndacomputer.xyz</p>
             </Link>
 
-            <div className=" flex cursor-pointer  items-center  gap-x-2 rounded-xl p-1 px-2 transition-all duration-100 ease-in hover:bg-neutral-900">
-              <FaPhoneAlt className=" text-xl text-neutral-500" />
+            <div className="flex cursor-pointer items-center gap-x-2 rounded-xl p-1 px-2 transition-all duration-100 ease-in hover:bg-neutral-900">
+              <FaPhoneAlt className="text-xl text-neutral-500" />
               <p className="font-Intermedium text-white"> 805-444-4444</p>
             </div>
           </div>

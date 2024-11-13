@@ -1,8 +1,19 @@
 import React from 'react';
 import Image from 'next/image';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle, CardButton } from "@/components/ui/card"; // Import the new CardButton
+import Link from 'next/link';
+import { allPosts, Post } from 'contentlayer/generated';
+import { compareDesc, format, parseISO } from 'date-fns';
 
-export function InfoCard() {
+import {
+  Card,
+  CardButton,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+
+export function InfoCard(post: Post) {
   return (
     <Card>
       <Image
@@ -14,15 +25,14 @@ export function InfoCard() {
       />
       <div className="flex-1">
         <h4 className="font-Interegular text-center text-lg text-white md:text-left">
-          Ultra
+          {post.title}
         </h4>
         <CardContent>
-          A high quality Framer portfolio template <br /> designed for creatives.
+          A high quality Framer portfolio template <br /> designed for
+          creatives.
         </CardContent>
 
-        <CardFooter>
-          Store
-        </CardFooter>
+ {/* <CardFooter>{format(parseISO(post.date), 'LLLL d, yyyy')}</CardFooter> */}
       </div>
       <CardButton href="/store" text="View" />
     </Card>

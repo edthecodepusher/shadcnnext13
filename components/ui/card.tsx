@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { PiArrowSquareOutThin } from 'react-icons/pi';
-import { cn } from '@/lib/utils'; // Assuming you have a utility function `cn` for conditional classNames
 import Link from 'next/link';
+import { PiArrowSquareOutThin } from 'react-icons/pi';
+
+import { cn } from '@/lib/utils'; // Assuming you have a utility function `cn` for conditional classNames
 
 // Card component
 const Card = React.forwardRef<
@@ -26,7 +27,10 @@ const CardHeader = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('font-Interegular hidden text-sm text-neutral-500 md:block', className)}
+    className={cn(
+      'font-Interegular hidden text-sm text-neutral-500 md:block',
+      className
+    )}
     {...props}
   />
 ));
@@ -66,7 +70,14 @@ const CardContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn('font-Interegular hidden text-sm text-neutral-500 md:block', className)} {...props} />
+  <div
+    ref={ref}
+    className={cn(
+      'font-Interegular hidden text-sm text-neutral-500 md:block',
+      className
+    )}
+    {...props}
+  />
 ));
 CardContent.displayName = 'CardContent';
 
@@ -77,14 +88,23 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn('font-Interegular mt-3 hidden h-7 w-fit items-center justify-center rounded-md border border-neutral-800 px-2 text-xs uppercase text-white md:flex', className)}
+    className={cn(
+      'font-Interegular mt-3 hidden h-7 w-fit items-center justify-center rounded-md border border-neutral-800 px-2 text-xs uppercase text-white md:flex',
+      className
+    )}
     {...props}
   />
 ));
 CardFooter.displayName = 'CardFooter';
 
 // CardButton component (new component to handle button inside the card)
-const CardButton = ({ href, text = "View" }: { href: string; text?: string }) => (
+const CardButton = ({
+  href,
+  text = 'View',
+}: {
+  href: string;
+  text?: string;
+}) => (
   <Link href={href} passHref>
     <button className="flex h-fit items-center gap-x-2 rounded-lg bg-neutral-800 p-2 text-white">
       <span className="font-Intermedium hidden text-xs md:block">{text}</span>

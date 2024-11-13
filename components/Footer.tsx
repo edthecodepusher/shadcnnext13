@@ -1,19 +1,19 @@
-import React from "react";
+import React from 'react';
 
 function Footer() {
   return (
     <div>
-      <div className="flex justify-center flex-col items-center  w-full p-3 mt-6 ">
+      <div className="mt-6 flex w-full flex-col items-center justify-center p-3">
         <div className="text-neutral-500">
           <span>© {new Date().getFullYear()}</span>
           <span>Portfolio by @Joscript</span>
         </div>
-        <div className="flex items-center gap-x-4 mt-3 text-white">
-          <p className="hover:text-neutral-700 duration-200 ease-in transition-all cursor-pointer">
+        <div className="mt-3 flex items-center gap-x-4 text-white">
+          <p className="cursor-pointer transition-all duration-200 ease-in hover:text-neutral-700">
             Purchase Courses
           </p>
-          <span className="w-1 h-1 rounded-full bg-white" />
-          <p className="hover:text-neutral-700 duration-200 ease-in transition-all cursor-pointer">
+          <span className="h-1 w-1 rounded-full bg-white" />
+          <p className="cursor-pointer transition-all duration-200 ease-in hover:text-neutral-700">
             Become a Team
           </p>
         </div>
